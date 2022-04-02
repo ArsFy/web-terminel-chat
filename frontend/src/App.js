@@ -74,6 +74,7 @@ class App extends React.Component {
                             if (inputinfo[1] !== undefined) {
                                 localStorage.setItem("user", inputinfo[1]);
                                 this.state.terminalLineData.push({ type: LineType.Output, value: <span><b style={{ color: "green" }}>System: </b>Your name is '{inputinfo[1]}'</span> })
+                                this.setState({ user: inputinfo[1] })
                             } else {
                                 this.state.terminalLineData.push({ type: LineType.Output, value: <span>'/login yourname' to set name</span> })
                             }
