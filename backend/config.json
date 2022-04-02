@@ -1,0 +1,5 @@
+{
+    "command": {
+        "help": "<span>help!<br>use '/login yourname' set name<br>use '/count' Check number of online</span>"
+    }
+}
